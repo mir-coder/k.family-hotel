@@ -1,0 +1,36 @@
+@use '../helpers' as *;
+
+.advantages-section{
+    &__grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: fluid(30, 10);
+
+        &-item{
+            text-align: center;
+            width: rem(350);
+
+            @include  tablet {
+                width: fluid(300, 200);
+            }
+
+            @include mobile-s{
+                width: 100%;
+            }
+        }
+    }
+
+    &__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: rem(15);
+        
+        &-description{
+            font-size: fluid(16, 14);
+            line-height: 120%;
+            color: var(--color-dark-70);
+        }
+    }
+}

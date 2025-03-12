@@ -1,0 +1,36 @@
+@use '../helpers' as *;
+
+.catalog-section{
+    &__grid{
+        display: grid;
+
+        &--3-cols{
+            grid-template-columns: repeat(3, 1fr);
+            gap: fluid(30, 10);
+
+            @include mobile{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+
+    &__button{
+        max-width: rem(250);
+        width: 100%;
+        background-color: transparent;
+        border-color: var(--color-accent);
+        color: var(--color-accent);
+        margin: rem(50) auto 0;
+
+        @include flex-center;
+
+        @include hover{
+            background-color: var(--color-accent);
+            color: var(--color-white);
+        }
+
+        @include mobile{
+            margin-top: rem(30);
+        }
+    }
+}

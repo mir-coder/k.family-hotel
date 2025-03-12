@@ -1,0 +1,33 @@
+@use '../helpers' as *;
+
+.about-section{
+    background-image: url('./../images/about-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    &::before{
+        content: '';
+        position: absolute;
+        background-color: var( --color-accent-40);
+        inset: 0;
+    }
+
+    &__inner{
+       text-align: center;
+       max-width: rem(730);
+       width: 100%;
+       position: relative;
+       z-index: 3;
+        color: var(--color-white);
+    }
+
+    .section__title{
+        color: var(--color-white);
+    }
+
+    .section__subtitle{
+        color: var(--color-blue);
+    }
+}

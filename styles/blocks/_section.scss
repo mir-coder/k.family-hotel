@@ -1,0 +1,21 @@
+@use '../helpers' as *;
+
+.section{
+    padding-block: fluid(100, 40);
+    
+    &__header{
+        text-align: center;
+        width: fluid(730, 330);
+        padding-bottom: fluid(64, 30);
+        margin-inline: auto;
+
+        &-inner{
+            display: grid;
+            row-gap: rem(16);
+        }
+    }
+
+    &__subtitle{
+        color: var(--color-accent);
+    }
+}

@@ -1,0 +1,44 @@
+@use '../helpers' as *;
+
+.additionally{
+    color: var(--color-white);
+
+    &__title{
+        color: var(--color-white);
+    }
+    // &__grid{
+    //     display: grid;
+    //     &--3-cols{
+    //         grid-template-columns: repeat(3, 1fr);
+    //         gap: fluid(30, 10);
+
+    //         // @include mobile{
+    //         //     grid-template-columns: repeat(2, 1fr);
+    //         // }
+    //     }
+    // }
+
+    &__item{
+        min-height: rem(350);
+        background: var(--bgImg) center/cover no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        padding-bottom: rem(25);
+        position: relative;
+
+        &::before{
+            content: '';
+            position: absolute;
+            background: var(--gradient);
+            inset: 0;
+        }
+    }
+    &__info{
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        color: var(--color-white);
+    }
+}

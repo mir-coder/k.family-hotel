@@ -1,0 +1,11 @@
+@use '../helpers' as *;
+
+.contacts-page{
+    padding-bottom: 0;
+    
+    &__body{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: rem(50);
+    }
+}

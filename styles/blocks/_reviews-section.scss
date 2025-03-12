@@ -1,0 +1,14 @@
+@use '../helpers' as *;
+
+.reviews-section{
+    background-color: var(--color-blue);
+    color: var(--color-white);
+
+    .section__title{
+        color: var(--color-white);
+    }
+
+    .swiper-pagination-fraction {
+        bottom: 0;
+    }
+}

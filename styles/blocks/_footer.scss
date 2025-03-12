@@ -1,0 +1,45 @@
+@use '../helpers' as *;
+
+.footer{
+    padding-top: fluid(80, 40);
+    background-color: var(--color-gray-20);
+    
+    &__inner,
+    &__body{
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(40)
+    }
+
+    &__menu{
+        &-list{
+            @include flex-center;
+
+            column-gap: rem(40);
+        }
+    }
+
+    &__extra{
+        background-color: var(--color-dark);
+        padding-block: rem(20);
+
+        &-container{
+            display: flex;
+            justify-content: space-between;
+           
+            color: var(--color-white);
+        }
+        
+
+    }
+
+    &__soc1als{
+        .soc1als__item{
+            @include square(rem(56));
+            @include flex-center;
+
+            background-color: var(--color-accent);
+            border-radius: 50%;
+        }
+    }
+}

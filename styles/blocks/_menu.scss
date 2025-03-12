@@ -1,0 +1,24 @@
+@use '../helpers' as *;
+
+.menu{
+    &__list{
+        display: flex;
+        column-gap: rem(30);
+
+        @include tablet{
+            flex-direction: column;
+            align-items: center;
+            row-gap: 1rem;
+        }
+    }
+
+    &__link{
+        @include tablet{
+            font-size: rem(20);
+        }
+    }
+
+    @include tablet{
+        overflow-y: auto;
+    }
+}
